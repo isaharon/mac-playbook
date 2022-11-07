@@ -1,0 +1,53 @@
+# configure install options
+configure_homebrew: true
+configure_dock: true
+
+# geerlingguy.mac.homebrew role config
+homebrew_installed_packages:
+  - git
+  - go
+  - mariadb
+  - nmap
+  - node
+  - openssl
+  - pyenv
+  - readline
+  - sqlite
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - discord
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - iterm2
+  - jetbrains-toolbox
+  - keepassxc
+  - obsidian
+  - sequel-ace
+  - spotify
+  - temurin
+  - visual-studio-code
+
+# geerlingguy.mac.dock role config
+dockitems_remove:
+  - FaceTime
+  - TV
+  - Music
+  - Podcasts
+  - News
+  - 'App Store'
+
+dockitems_persist:
+  - name: iTerm
+    path: "/Applications/iTerm.app/"
+  - name: Safari
+    path: "/Applications/Safari.app/"
+  - name: Obsidian
+    path: "/Applications/Obsidian.app/"
