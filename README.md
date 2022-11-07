@@ -6,7 +6,7 @@ This playbook installs and configures my laptop workstation for my personal purp
 
 - Apple Command Line Tools installed - `xcode-select --install`
 - Homebrew installed - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Ansible install via Homebrew (instead of using Python's pip) - `brew install ansible`
+- Ansible installed via Homebrew - `brew install ansible`
 
 ## Usage
 
