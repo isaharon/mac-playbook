@@ -1,6 +1,6 @@
-# Workstation Playbook
+# Mac Playbook
 
-This playbook installs and configures my laptop workstation for my personal purposes. The setup used in this project requires the package manager, Homebrew, to be installed first which is probably not ideal for full automation but can hopefully simplify some management of things.
+This playbook installs and configures my Macbook for my personal purposes. The setup used in this project requires the package manager, Homebrew, to be installed first which is probably not ideal for full automation but can hopefully simplify some management of things.
 
 ## Requirements
 
@@ -23,6 +23,10 @@ ansible-galaxy install -r requirements.yml
 ```shell
 ansible-playbook playbook.yml --ask-become-pass
 ```
+
+## TODO Setup flow
+
+1. Example 1
 
 ## References
 

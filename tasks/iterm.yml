@@ -1,0 +1,22 @@
+---
+- name: Add Homebrew's zsh to /etc/shells.
+  lineinfile:
+    path: /etc/shells
+    line: "/opt/homebrew/bin/zsh"
+    insertafter: EOF
+
+- name: Change default login shell
+  command: >
+    chsh -s /opt/homebrew/bin/zsh
+
+- name: Download ohmyzsh.
+  get_url:
+    url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+    dest: /tmp/zsh-install.sh
+    mode: 0755
+
+- name: Run ohmyzsh installer.
+  command: >
+    sh zsh-install.sh
+    chdir=/tmp
+    creates={{ lookup('env','HOME') }}/oh-my-zsh
