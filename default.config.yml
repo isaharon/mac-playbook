@@ -13,27 +13,37 @@ homebrew_installed_packages:
   - neovim
   - node
   - openssl
-  - readline
   - ripgrep
-  - wget
+  - sqlite
   - zsh
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
   - iterm2
+  - keepassxc
+  - obsidian
+  - sequel-ace
+  - spotify
+  - sublime-text
 
 # geerlingguy.mac.dock role config
 dockitems_remove:
-  - FaceTime
-  - TV
-  - Music
-  - Podcasts
-  - News
   - 'App Store'
+  - FaceTime
+  - Messages
+  - Music
+  - News
+  - Podcasts
+  - TV
 
 dockitems_persist:
   - name: iTerm
