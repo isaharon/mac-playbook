@@ -1,6 +1,6 @@
 ---
 - name: Add Homebrew's zsh to /etc/shells.
-  become: yes
+  become: true
   lineinfile:
     path: /etc/shells
     line: "/opt/homebrew/bin/zsh"

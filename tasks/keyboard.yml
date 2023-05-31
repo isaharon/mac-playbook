@@ -1,0 +1,8 @@
+--
+- name: Install custom Dvorak keyboard layout
+  become: true
+  copy:
+    src: "files/Dvorak - Custom.keylayout"
+    dest: "/Library/Keyboard Layouts/"
+  debug:
+    msg: "Remember to re-login for changes to be reflected"
