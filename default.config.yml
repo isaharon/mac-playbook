@@ -4,7 +4,7 @@ configure_dock: true
 configure_iterm: true
 configure_dotfiles: false
 configure_config: false
-configure_keyboard: false
+configure_keyboard: true
 
 # geerlingguy.mac.homebrew role config
 homebrew_installed_packages:
