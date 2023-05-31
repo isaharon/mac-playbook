@@ -9,8 +9,12 @@ configure_keyboard: false
 # geerlingguy.mac.homebrew role config
 homebrew_installed_packages:
   - git
+  - go
+  - neovim
+  - node
   - openssl
   - readline
+  - ripgrep
   - wget
   - zsh
 
