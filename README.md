@@ -18,7 +18,15 @@ This playbook installs and configures my Macbook for personal purposes. The setu
 ansible-galaxy install -r requirements.yml
 ```
 
-3. Run playbook.
+3. Modify/update default config.
+
+```shell
+cp default.config.yml config.yml
+vim config.yml
+mv config.yml default.config.yml # optional
+```
+
+4. Run playbook.
 
 ```shell
 ansible-playbook playbook.yml --ask-become-pass
