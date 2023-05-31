@@ -31,3 +31,7 @@
     # - import_tasks: tasks/config.yml
     #   when: configure_config
     #   tags: ['config']
+
+    # - import_tasks: tasks/keyboard.yml
+    #   when: configure_keyboard
+    #   tags: ['keyboard']
