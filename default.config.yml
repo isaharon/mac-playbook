@@ -15,6 +15,7 @@ homebrew_installed_packages:
   - openssl
   - ripgrep
   - sqlite
+  - tmux
   - zsh
 
 homebrew_taps:
@@ -24,7 +25,6 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
   - dropbox
   - firefox
   - google-chrome
