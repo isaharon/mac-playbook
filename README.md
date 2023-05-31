@@ -46,6 +46,9 @@ brew install cirruslabs/cli/tart
 tart clone ghcr.io/cirruslabs/macos-ventura-base:latest ventura-base
 tart clone ventura-base macos-testing
 tart run macos-testing
+
+# Delete after
+tart delete macos-testing
 ```
 
 - In macOS VM, clone this git repository
